@@ -1,23 +1,32 @@
 // Mobile (up to 447px) ---------------------------------
 // ------------------------------------------------------
-html {
-  box-sizing: border-box;
+.owl-carousel {
+    position: relative;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 2rem;
+  height: 40px;
+  margin-top: -20px;
+  color: rgba(255, 255, 255, .85);
 }
 
-body {
-  margin: 0;
-  padding: 0;
+.owl-prev {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, .25);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.owl-next {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, .25);
 }
 
 // Phablet (448px to 767px) -----------------------------

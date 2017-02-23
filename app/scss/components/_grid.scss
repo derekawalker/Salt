@@ -1,0 +1,582 @@
+// Mobile (up to 447px) ---------------------------------
+// ------------------------------------------------------
+$col1: 8.3333%;
+$col2: 16.6666%;
+$col3: 25%;
+$col4: 33.3333%;
+$col5: 41.6666%;
+$col6: 50%;
+$col7: 58.3333%;
+$col8: 66.6666%;
+$col9: 75%;
+$col10: 83.3333%;
+$col11: 91.6666%;
+$col12: 100%;
+
+.container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  &.padded {
+    .col {
+      margin-left: $gutter / 2;
+      margin-right: $gutter / 2;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.col {
+  position: relative;
+
+}
+
+.col-1 {
+  flex-basis: $col1;
+}
+
+.col-2 {
+  flex-basis: $col2;
+}
+
+.col-3 {
+  flex-basis: $col3;
+}
+
+.col-4 {
+  flex-basis: $col4;
+}
+
+.col-5 {
+  flex-basis: $col5;
+}
+
+.col-6 {
+  flex-basis: $col6;
+}
+
+.col-7 {
+  flex-basis: $col7;
+}
+
+.col-8 {
+  flex-basis: $col8;
+}
+
+.col-9 {
+  flex-basis: $col9;
+}
+
+.col-10 {
+  flex-basis: $col10;
+}
+
+.col-11 {
+  flex-basis: $col11;
+}
+
+.col-12 {
+  flex-basis: $col12;
+}
+
+.row {
+  &.gutters {
+    .col-1 {
+      flex-basis: calc(#{$col1} - #{$gutter / 2});
+    }
+
+    .col-2 {
+      flex-basis: calc(#{$col2} - #{$gutter / 2});
+    }
+
+    .col-3 {
+      flex-basis: calc(#{$col3} - #{$gutter / 2});
+    }
+
+    .col-4 {
+      flex-basis: calc(#{$col4} - #{$gutter / 2});
+    }
+
+    .col-5 {
+      flex-basis: calc(#{$col5} - #{$gutter / 2});
+    }
+
+    .col-6 {
+      flex-basis: calc(#{$col6} - #{$gutter / 2});
+    }
+
+    .col-7 {
+      flex-basis: calc(#{$col7} - #{$gutter / 2});
+    }
+
+    .col-8 {
+      flex-basis: calc(#{$col8} - #{$gutter / 2});
+    }
+
+    .col-9 {
+      flex-basis: calc(#{$col9} - #{$gutter / 2});
+    }
+
+    .col-10 {
+      flex-basis: calc(#{$col10} - #{$gutter / 2});
+    }
+
+    .col-11 {
+      flex-basis: calc(#{$col11} - #{$gutter / 2});
+    }
+
+    .col-12 {
+      flex-basis: calc(#{$col12} - #{$gutter / 2});
+    }
+  }
+}
+
+// Phablet (448px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+  .container {
+    max-width: calc(#{$phab} - #{$gutter});
+  }
+
+  .col-phab-1 {
+    flex-basis: $col1;
+  }
+
+  .col-phab-2 {
+    flex-basis: $col2;
+  }
+
+  .col-phab-3 {
+    flex-basis: $col3;
+  }
+
+  .col-phab-4 {
+    flex-basis: $col4;
+  }
+
+  .col-phab-5 {
+    flex-basis: $col5;
+  }
+
+  .col-phab-6 {
+    flex-basis: $col6;
+  }
+
+  .col-phab-7 {
+    flex-basis: $col7;
+  }
+
+  .col-phab-8 {
+    flex-basis: $col8;
+  }
+
+  .col-phab-9 {
+    flex-basis: $col9;
+  }
+
+  .col-phab-10 {
+    flex-basis: $col10;
+  }
+
+  .col-phab-11 {
+    flex-basis: $col11;
+  }
+
+  .col-phab-12 {
+    flex-basis: $col12;
+  }
+
+  .row {
+    &.gutters {
+      .col-phab-1 {
+        flex-basis: calc(#{$col1} - #{$gutter / 2});
+      }
+
+      .col-phab-2 {
+        flex-basis: calc(#{$col2} - #{$gutter / 2});
+      }
+
+      .col-phab-3 {
+        flex-basis: calc(#{$col3} - #{$gutter / 2});
+      }
+
+      .col-phab-4 {
+        flex-basis: calc(#{$col4} - #{$gutter / 2});
+      }
+
+      .col-phab-5 {
+        flex-basis: calc(#{$col5} - #{$gutter / 2});
+      }
+
+      .col-phab-6 {
+        flex-basis: calc(#{$col6} - #{$gutter / 2});
+      }
+
+      .col-phab-7 {
+        flex-basis: calc(#{$col7} - #{$gutter / 2});
+      }
+
+      .col-phab-8 {
+        flex-basis: calc(#{$col8} - #{$gutter / 2});
+      }
+
+      .col-phab-9 {
+        flex-basis: calc(#{$col9} - #{$gutter / 2});
+      }
+
+      .col-phab-10 {
+        flex-basis: calc(#{$col10} - #{$gutter / 2});
+      }
+
+      .col-phab-11 {
+        flex-basis: calc(#{$col11} - #{$gutter / 2});
+      }
+
+      .col-phab-12 {
+        flex-basis: calc(#{$col12} - #{$gutter / 2});
+      }
+    }
+  }
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+  .container {
+    max-width: calc(#{$tab} - #{$gutter});
+  }
+
+  .col-tab-1 {
+    flex-basis: $col1;
+  }
+
+  .col-tab-2 {
+    flex-basis: $col2;
+  }
+
+  .col-tab-3 {
+    flex-basis: $col3;
+  }
+
+  .col-tab-4 {
+    flex-basis: $col4;
+  }
+
+  .col-tab-5 {
+    flex-basis: $col5;
+  }
+
+  .col-tab-6 {
+    flex-basis: $col6;
+  }
+
+  .col-tab-7 {
+    flex-basis: $col7;
+  }
+
+  .col-tab-8 {
+    flex-basis: $col8;
+  }
+
+  .col-tab-9 {
+    flex-basis: $col9;
+  }
+
+  .col-tab-10 {
+    flex-basis: $col10;
+  }
+
+  .col-tab-11 {
+    flex-basis: $col11;
+  }
+
+  .col-tab-12 {
+    flex-basis: $col12;
+  }
+
+  .row {
+    &.gutters {
+      .col-tab-1 {
+        flex-basis: calc(#{$col1} - #{$gutter / 2});
+      }
+
+      .col-tab-2 {
+        flex-basis: calc(#{$col2} - #{$gutter / 2});
+      }
+
+      .col-tab-3 {
+        flex-basis: calc(#{$col3} - #{$gutter / 2});
+      }
+
+      .col-tab-4 {
+        flex-basis: calc(#{$col4} - #{$gutter / 2});
+      }
+
+      .col-tab-5 {
+        flex-basis: calc(#{$col5} - #{$gutter / 2});
+      }
+
+      .col-tab-6 {
+        flex-basis: calc(#{$col6} - #{$gutter / 2});
+      }
+
+      .col-tab-7 {
+        flex-basis: calc(#{$col7} - #{$gutter / 2});
+      }
+
+      .col-tab-8 {
+        flex-basis: calc(#{$col8} - #{$gutter / 2});
+      }
+
+      .col-tab-9 {
+        flex-basis: calc(#{$col9} - #{$gutter / 2});
+      }
+
+      .col-tab-10 {
+        flex-basis: calc(#{$col10} - #{$gutter / 2});
+      }
+
+      .col-tab-11 {
+        flex-basis: calc(#{$col11} - #{$gutter / 2});
+      }
+
+      .col-tab-12 {
+        flex-basis: calc(#{$col12} - #{$gutter / 2});
+      }
+    }
+  }
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+  .container {
+    max-width: calc(#{$desk} - #{$gutter});
+  }
+
+  .col-desk-1 {
+    flex-basis: $col1;
+  }
+
+  .col-desk-2 {
+    flex-basis: $col2;
+  }
+
+  .col-desk-3 {
+    flex-basis: $col3;
+  }
+
+  .col-desk-4 {
+    flex-basis: $col4;
+  }
+
+  .col-desk-5 {
+    flex-basis: $col5;
+  }
+
+  .col-desk-6 {
+    flex-basis: $col6;
+  }
+
+  .col-desk-7 {
+    flex-basis: $col7;
+  }
+
+  .col-desk-8 {
+    flex-basis: $col8;
+  }
+
+  .col-desk-9 {
+    flex-basis: $col9;
+  }
+
+  .col-desk-10 {
+    flex-basis: $col10;
+  }
+
+  .col-desk-11 {
+    flex-basis: $col11;
+  }
+
+  .col-desk-12 {
+    flex-basis: $col12;
+  }
+
+  .row {
+    &.gutters {
+      .col-desk-1 {
+        flex-basis: calc(#{$col1} - #{$gutter / 2});
+      }
+
+      .col-desk-2 {
+        flex-basis: calc(#{$col2} - #{$gutter / 2});
+      }
+
+      .col-desk-3 {
+        flex-basis: calc(#{$col3} - #{$gutter / 2});
+      }
+
+      .col-desk-4 {
+        flex-basis: calc(#{$col4} - #{$gutter / 2});
+      }
+
+      .col-desk-5 {
+        flex-basis: calc(#{$col5} - #{$gutter / 2});
+      }
+
+      .col-desk-6 {
+        flex-basis: calc(#{$col6} - #{$gutter / 2});
+      }
+
+      .col-desk-7 {
+        flex-basis: calc(#{$col7} - #{$gutter / 2});
+      }
+
+      .col-desk-8 {
+        flex-basis: calc(#{$col8} - #{$gutter / 2});
+      }
+
+      .col-desk-9 {
+        flex-basis: calc(#{$col9} - #{$gutter / 2});
+      }
+
+      .col-desk-10 {
+        flex-basis: calc(#{$col10} - #{$gutter / 2});
+      }
+
+      .col-desk-11 {
+        flex-basis: calc(#{$col11} - #{$gutter / 2});
+      }
+
+      .col-desk-12 {
+        flex-basis: calc(#{$col12} - #{$gutter / 2});
+      }
+    }
+  }
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+  .container {
+    max-width: calc(#{$wide} - #{$gutter});
+  }
+
+  .col-wide-1 {
+    flex-basis: $col1;
+  }
+
+  .col-wide-2 {
+    flex-basis: $col2;
+  }
+
+  .col-wide-3 {
+    flex-basis: $col3;
+  }
+
+  .col-wide-4 {
+    flex-basis: $col4;
+  }
+
+  .col-wide-5 {
+    flex-basis: $col5;
+  }
+
+  .col-wide-6 {
+    flex-basis: $col6;
+  }
+
+  .col-wide-7 {
+    flex-basis: $col7;
+  }
+
+  .col-wide-8 {
+    flex-basis: $col8;
+  }
+
+  .col-wide-9 {
+    flex-basis: $col9;
+  }
+
+  .col-wide-10 {
+    flex-basis: $col10;
+  }
+
+  .col-wide-11 {
+    flex-basis: $col11;
+  }
+
+  .col-wide-12 {
+    flex-basis: $col12;
+  }
+
+  .row {
+    &.gutters {
+      .col-wide-1 {
+        flex-basis: calc(#{$col1} - #{$gutter / 2});
+      }
+
+      .col-wide-2 {
+        flex-basis: calc(#{$col2} - #{$gutter / 2});
+      }
+
+      .col-wide-3 {
+        flex-basis: calc(#{$col3} - #{$gutter / 2});
+      }
+
+      .col-wide-4 {
+        flex-basis: calc(#{$col4} - #{$gutter / 2});
+      }
+
+      .col-wide-5 {
+        flex-basis: calc(#{$col5} - #{$gutter / 2});
+      }
+
+      .col-wide-6 {
+        flex-basis: calc(#{$col6} - #{$gutter / 2});
+      }
+
+      .col-wide-7 {
+        flex-basis: calc(#{$col7} - #{$gutter / 2});
+      }
+
+      .col-wide-8 {
+        flex-basis: calc(#{$col8} - #{$gutter / 2});
+      }
+
+      .col-wide-9 {
+        flex-basis: calc(#{$col9} - #{$gutter / 2});
+      }
+
+      .col-wide-10 {
+        flex-basis: calc(#{$col10} - #{$gutter / 2});
+      }
+
+      .col-wide-11 {
+        flex-basis: calc(#{$col11} - #{$gutter / 2});
+      }
+
+      .col-wide-12 {
+        flex-basis: calc(#{$col12} - #{$gutter / 2});
+      }
+    }
+  }
+}

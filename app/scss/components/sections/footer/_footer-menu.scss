@@ -1,23 +1,25 @@
 // Mobile (up to 447px) ---------------------------------
 // ------------------------------------------------------
-html {
-  box-sizing: border-box;
-}
+.section-footer__menu {
+  ul {
+    padding: 1rem 0 0;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing;
+    font-weight: bold;
+    font-size: .875rem;
+  }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+  li {
+    a {
+      display: block;
+      padding: .25rem 1rem;
+    }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
 }
 
 // Phablet (448px to 767px) -----------------------------

@@ -5,47 +5,360 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|Dancing+Script:400,700|Amatic+SC:400,700|Meddon|Lobster|Libre+Baskerville:400,700,400italic" rel="stylesheet" type="text/css" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://www.perfectlyposh.com/sites/default/themes/posh_omega/css/posh-omega.styles.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"/></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"/></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"/></script>
-    <script src="js/includes.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Roboto+Slab:400,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css">
+
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="css/styles.css">
     <!--endbuild-->
   </head>
 
   <body>
-    <!-- \/ Remove if no Posh header -->
-    <section id="page-header">
-    <!-- ^ Remove if no Posh header -->
+    <header class="section-header">
+      <div class="row flex-center text-center">
+        <div class="section-header__logo col col-8 col-tab-2">
+          <a href="/"><img src="/images/logo.svg"/></a>
+        </div>
+        <div class="section-header__main-menu col col-2 col-tab-8">
+          <a class="main-menu-toggle" href="#">
+            <i class="fa fa-bars"></i>
+          </a>
+          <ul class="main-menu-content">
+            <li>
+              <a href="#">Link 1</a>
+            </li>
+            <li>
+              <a href="#">Link 2</a>
+            </li>
+            <li>
+              <a href="#">Link 3</a>
+            </li>
+            <li>
+              <a href="#">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <div class="section-header__search col col-2">
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-ad">
+      <div class="section-ad__ad-space">
+        <div class="section-ad__ad-space__ad">
+          &nbsp;
+        </div>
+      </div>
+    </section>
+
+    <section class="section-post-lead">
+      <a href="#">
+        <div class="section-post-lead__date post-date">
+          January 23, 2017
+        </div>
+        <h4 class="section-post-lead__title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        </h4>
+        <div class="section-post-lead__img-cover">
+          &nbsp;
+        </div>
+        <img class="section-post-lead__img" src="https://perfectlyposhcom-perfectlyposhllc.netdna-ssl.com/sites/default/files/homepage/home-main-bck.png" />
+      </a>
+    </section>
+
+    <section class="section-ad">
+      <div class="section-ad__ad-space">
+        <div class="section-ad__ad-space__ad">
+          &nbsp;
+        </div>
+      </div>
+    </section>
+
+    <section class="row padded section-all-posts">
+
+      <div class="col col-12 col-tab-8 col-desk-6 col-wide-8 section-post-summaries">
+
+        <section>
+          <article class="section-post-summary row padded">
+            <div class="col col-4">
+              <a href="#">
+                <img class="section-post-summary__img"src="/images/post.jpg" />
+              </a>
+            </div>
+            <div class="col col-8">
+              <div class="section-post-summary__date post-date">
+                January 23, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-4">
+              <a href="#">
+                <img class="section-post-summary__img"src="/images/post.jpg" />
+              </a>
+            </div>
+            <div class="col col-8">
+              <div class="section-post-summary__date post-date">
+                January 22, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit ectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-4">
+              <a href="#">
+                <img class="section-post-summary__img"src="/images/post.jpg" />
+              </a>
+            </div>
+            <div class="col col-8">
+              <div class="section-post-summary__date post-date">
+                January 21, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-4">
+              <a href="#">
+                <img class="section-post-summary__img"src="/images/post.jpg" />
+              </a>
+            </div>
+            <div class="col col-8">
+              <div class="section-post-summary__date post-date">
+                January 23, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-4">
+              <a href="#">
+                <img class="section-post-summary__img"src="/images/post.jpg" />
+              </a>
+            </div>
+            <div class="col col-8">
+              <div class="section-post-summary__date post-date">
+                January 22, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-4">
+              <a href="#">
+                <img class="section-post-summary__img"src="/images/post.jpg" />
+              </a>
+            </div>
+            <div class="col col-8">
+              <div class="section-post-summary__date post-date">
+                January 21, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+        </section>
+
+      </div>
+
+      <div class="col col-12 col-tab-4 col-desk-3 col-wide-2 section-post-trending">
+
+        <section>
+          <h3>Trending</h3>
+          <article class="section-post-summary row padded">
+            <div class="col col-12">
+              <div class="section-post-summary__date post-date">
+                January 23, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-12">
+              <div class="section-post-summary__date post-date">
+                January 22, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit ectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-12">
+              <div class="section-post-summary__date post-date">
+                January 21, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-12">
+              <div class="section-post-summary__date post-date">
+                January 23, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-12">
+              <div class="section-post-summary__date post-date">
+                January 22, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-12">
+              <div class="section-post-summary__date post-date">
+                January 21, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+        </section>
+
+      </div>
+
+      <div class="col col-12 col-desk-3 col-wide-2 section-post-popular">
+
+        <section>
+          <h3>Most Popular</h3>
+          <article class="section-post-summary row padded">
+            <div class="col col-12">
+              <div class="section-post-summary__date post-date">
+                January 23, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-12">
+              <div class="section-post-summary__date post-date">
+                January 22, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit consectetur adipiscing elit amet, consectetur adipiscing elit ectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-12">
+              <div class="section-post-summary__date post-date">
+                January 21, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-12">
+              <div class="section-post-summary__date post-date">
+                January 23, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit orem ipsum dolor sit amet</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-12">
+              <div class="section-post-summary__date post-date">
+                January 22, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit consectetur adipiscing elit adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+          <article class="section-post-summary row padded">
+            <div class="col col-12">
+              <div class="section-post-summary__date post-date">
+                January 21, 2017
+              </div>
+              <h4 class="section-post-summary__title">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+              </h4>
+            <div>
+          </article>
+        </section>
+
+      </div>
 
     </section>
-    <!-- ----------------------------- -->
-    <!-- vvv COPY EVERYTHING BELOW vvv -->
-    <!-- ----------------------------- -->
 
-
-
-    <div class="test">This is a gulp starter!</div>
-
-
-
-    <!-- ----------------------------- -->
-    <!-- ^^^ COPY EVERYTHING ABOVE ^^^ -->
-    <!-- ----------------------------- -->
-    <!-- \/ Remove if no Posh footer -->
-    <section id="page-footer">
-    <!-- ^ Remove if no Posh footer -->
-
+    <section class="section-ad-carousel">
+      <div class="owl-carousel">
+        <div class="section-ad-carousel__custom-ad">
+          <a href="#"><img src="/images/post.jpg" /></a>
+        </div>
+        <div class="section-ad-carousel__custom-ad">
+          <a href="#"><img src="/images/post.jpg" /></a>
+        </div>
+        <div class="section-ad-carousel__custom-ad">
+          <a href="#"><img src="/images/post.jpg" /></a>
+        </div>
+        <div class="section-ad-carousel__custom-ad">
+          <a href="#"><img src="/images/post.jpg" /></a>
+        </div>
+        <div class="section-ad-carousel__custom-ad">
+          <a href="#"><img src="/images/post.jpg" /></a>
+        </div>
+        <div class="section-ad-carousel__custom-ad">
+          <a href="#"><img src="/images/post.jpg" /></a>
+        </div>
+      </div>
     </section>
+
+    <footer class="section-footer">
+      <div class="section-footer__menu text-center">
+        <ul>
+          <li>
+            <a href="#">Link 1</a>
+          </li>
+          <li>
+            <a href="#">Link 1</a>
+          </li>
+        </ul>
+      </div>
+      <div class="section-footer__copyright text-center">
+        &copy; Copyright 2017
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
+
     <!--build:js js/main.min.js -->
     <script src="js/main.js"></script>
     <!-- endbuild -->
+
   </body>
 
 </html>

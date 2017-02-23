@@ -1,23 +1,20 @@
 // Mobile (up to 447px) ---------------------------------
 // ------------------------------------------------------
-html {
-  box-sizing: border-box;
-}
+.section-header__logo {
+  margin: .75rem 0;
+  order: 2;
+  text-align: center;
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+  a {
+    display: block;
+  }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+  img {
+    width: 100%;
+    display: block;
+    max-width: 30px;
+    margin: 0 auto;
+  }
 }
 
 // Phablet (448px to 767px) -----------------------------
@@ -29,7 +26,10 @@ img {
 // Tablet (768px to 1023px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $tab) {
-
+  .section-header__logo {
+    margin: .75rem 0 .75rem 1rem;
+    order: 1;
+  }
 }
 
 // Desktop (1024px to 1339px) ---------------------------

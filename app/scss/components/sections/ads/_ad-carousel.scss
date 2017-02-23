@@ -1,23 +1,12 @@
 // Mobile (up to 447px) ---------------------------------
 // ------------------------------------------------------
-html {
-  box-sizing: border-box;
+.section-ad-carousel {
+  background: $shadow-light;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+.section-ad-carousel__custom-ad {
+  background: $shadow-light;
+  text-align: center;
 }
 
 // Phablet (448px to 767px) -----------------------------

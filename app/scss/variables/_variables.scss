@@ -1,4 +1,36 @@
+// Grid
 $phab: 448px;
 $tab: 768px;
 $desk: 1024px;
 $wide: 1340px;
+$gutter: 1rem; // Use ems or px for fixed width, % or vw for relative width.
+$padding: 1rem;
+$margin: 1rem;
+
+// Colors
+$primary: #0275d8;
+$secondary: #e6e6e6;
+$success: #5cb85c;
+$info: #5bc0de;
+$warning: #f0ad4e;
+$danger: #d9534f;
+$orange: #f56648;
+$pink: #f2b8b8;
+
+// Typography
+$body-font: Lato, sans-serif;
+$body-font-color: #333;
+$title-font: Roboto Slab, serif;
+$title-font-color: #111;
+$link-color: $orange;
+$link-hover-color: lighten($orange, 15%);
+$letter-spacing: .15em;
+
+// Design Effects
+$shadow-light: rgba(0, 0, 0, .1);
+$shadow-med: rgba(0, 0, 0, .25);
+$shadow-dark: rgba(0, 0, 0, .5);
+
+$rad: .25rem;
+$rad-inner: .125rem;
+$rad-outer: .5rem;

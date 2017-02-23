@@ -1,23 +1,31 @@
 // Mobile (up to 447px) ---------------------------------
 // ------------------------------------------------------
-html {
-  box-sizing: border-box;
+.text-center {
+  text-align: center;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.text-left {
+  text-align: left;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+.text-right {
+  text-align: right;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.text-justify {
+  text-align: justify;
+}
+
+.padding-single {
+  padding: $padding;
+}
+
+.padding-half {
+  padding: $padding / 2;
+}
+
+.padding-double {
+  padding: $padding * 2;
 }
 
 // Phablet (448px to 767px) -----------------------------

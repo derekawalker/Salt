@@ -1,24 +1,24 @@
 // Mobile (up to 447px) ---------------------------------
 // ------------------------------------------------------
-html {
-  box-sizing: border-box;
+.section-post-popular {
+  background: #f1f1f1;
+  padding: 0 $padding;
+  display: none;
+
+  h3 {
+    background: rgba(0, 0, 0, .1);
+    text-transform: uppercase;
+    padding: .25rem 1rem;
+    margin: 0 0 - $padding 1.5 * $padding;
+    letter-spacing: $letter-spacing / 2;
+    font-size: 1rem;
+  }
+
+  .section-post-summary__title {
+    font-size: 2.25vw;
+  }
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 // Phablet (448px to 767px) -----------------------------
 // ------------------------------------------------------
@@ -35,11 +35,21 @@ img {
 // Desktop (1024px to 1339px) ---------------------------
 // ------------------------------------------------------
 @media (min-width: $desk) {
+  .section-post-popular {
+    display: block;
 
+    .section-post-summary__title {
+      font-size: 1.75vw;
+    }
+  }
 }
 
 // Wide (over 1340px) -----------------------------------
 // ------------------------------------------------------
 @media (min-width: $wide) {
-
+  .section-post-popular {
+    .section-post-summary__title {
+      font-size: 1.25vw;
+    }
+  }
 }

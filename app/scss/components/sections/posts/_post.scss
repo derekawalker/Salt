@@ -1,23 +1,16 @@
 // Mobile (up to 447px) ---------------------------------
 // ------------------------------------------------------
-html {
-  box-sizing: border-box;
+.section-all-posts {
+  margin-bottom: $padding;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+.post-date {
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: $letter-spacing;
+  line-height: 1;
+  margin-bottom: .5em;
 }
 
 // Phablet (448px to 767px) -----------------------------

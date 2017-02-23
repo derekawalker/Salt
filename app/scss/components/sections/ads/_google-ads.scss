@@ -1,23 +1,16 @@
 // Mobile (up to 447px) ---------------------------------
 // ------------------------------------------------------
-html {
-  box-sizing: border-box;
+.section-ad {
+
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.section-ad__ad-space {
+  padding: $padding;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+.section-ad__ad-space__ad {
+  background: #f1f1f1;
+  min-height: 10px;
 }
 
 // Phablet (448px to 767px) -----------------------------

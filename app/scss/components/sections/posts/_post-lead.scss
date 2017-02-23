@@ -1,0 +1,89 @@
+// Mobile (up to 447px) ---------------------------------
+// ------------------------------------------------------
+.section-post-lead {
+  background: #999;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  a {
+    color: #fff;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fff;
+    }
+  }
+}
+
+.section-post-lead__date {
+  position: absolute;
+  top: $padding;
+  left: $padding;
+  width: 75%;
+  z-index: 5;
+}
+
+.section-post-lead__title {
+  font-size: 1.35rem;
+  font-weight: normal;
+  position: absolute;
+  top: $padding * 2.5;
+  left: $padding;
+  width: 75%;
+  z-index: 5;
+}
+
+.section-post-lead__img {
+  width: 100%;
+  display: block;
+}
+
+.section-post-lead__img-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+// Phablet (448px to 767px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $phab) {
+  .section-post-lead__title {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+}
+
+// Tablet (768px to 1023px) -----------------------------
+// ------------------------------------------------------
+@media (min-width: $tab) {
+  .section-post-lead__title {
+    font-size: 1.75rem;
+    width: 50%;
+  }
+}
+
+// Desktop (1024px to 1339px) ---------------------------
+// ------------------------------------------------------
+@media (min-width: $desk) {
+  .section-post-lead__title {
+    font-size: 2rem;
+    width: 30%;
+  }
+}
+
+// Wide (over 1340px) -----------------------------------
+// ------------------------------------------------------
+@media (min-width: $wide) {
+  .section-post-lead__title {
+    font-size: 2.25rem;
+    width: 25%;
+  }
+}

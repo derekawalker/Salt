@@ -1,45 +1,51 @@
 // Mobile (up to 447px) ---------------------------------
 // ------------------------------------------------------
-html {
-  box-sizing: border-box;
+.section-post-summary {
+  margin-bottom: $padding * 1.5;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.section-post-summary__img {
+  display: block;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+.section-post-summary__date {
+  color: #999;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.section-post-summary__title {
+  padding-right: $padding;
+  font-size: 5vw;
 }
+
 
 // Phablet (448px to 767px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $phab) {
-
+  .section-post-summary__title {
+    font-size: 4vw;
+  }
 }
 
 // Tablet (768px to 1023px) -----------------------------
 // ------------------------------------------------------
 @media (min-width: $tab) {
-
+  .section-post-summary__title {
+    font-size: 2.75vw;
+  }
 }
 
 // Desktop (1024px to 1339px) ---------------------------
 // ------------------------------------------------------
 @media (min-width: $desk) {
-
+  .section-post-summary__title {
+    font-size: 2.25vw;
+  }
 }
 
 // Wide (over 1340px) -----------------------------------
 // ------------------------------------------------------
 @media (min-width: $wide) {
-
+  .section-post-summary__title {
+    font-size: 2.5vw;
+  }
 }
